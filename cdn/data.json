@@ -8,5 +8,12 @@
     "Sinto"
   ],
   "trips": [],
-  "injuries": []
+  "injuries": [
+    {
+      "id": "68d27aac-1fa6-4f0e-a7b5-ffabd3d1ef43",
+      "player": "Sinto",
+      "from": "2026-09-01",
+      "to": "2026-12-31"
+    }
+  ]
 }
