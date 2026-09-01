@@ -216,7 +216,7 @@ const App: React.FC = () => {
         )}
       </main>
 
-      <footer>I dati vengono salvati automaticamente su questo dispositivo.</footer>
+      <footer>I dati vengono salvati automaticamente.</footer>
     </div>
   );
 };
