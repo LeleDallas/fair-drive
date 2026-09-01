@@ -51,6 +51,17 @@
       "driver": null,
       "automatic": false,
       "completed": false
+    },
+    {
+      "id": "47221af5-f8af-440e-8d37-86493ae6b0ff",
+      "date": "2026-09-03",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": null,
+      "automatic": true,
+      "completed": false
     }
   ],
   "injuries": [
