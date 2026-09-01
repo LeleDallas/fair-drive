@@ -29,6 +29,17 @@
       "driver": null,
       "automatic": true,
       "completed": false
+    },
+    {
+      "id": "ee11f3b2-8ab6-478a-a96b-d6e0e0304d01",
+      "date": "2026-09-02",
+      "type": "Partita",
+      "name": "[Borello] Triangolare",
+      "km": 10,
+      "totalKm": 20,
+      "driver": null,
+      "automatic": false,
+      "completed": false
     }
   ],
   "injuries": [
