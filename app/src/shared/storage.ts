@@ -81,7 +81,8 @@ const normalizeInjury = (value: unknown): Injury | null => {
 };
 
 export const loadData = async (): Promise<AppData> => {
-  const DATA_URL = "https://raw.githubusercontent.com/LeleDallas/fair-drive/refs/heads/main/cdn/data.json";
+  const DATA_URL =
+    "https://raw.githubusercontent.com/LeleDallas/fair-drive/refs/heads/main/cdn/data.json";
 
   const fallbackData: AppData = {
     players: defaultPlayers,

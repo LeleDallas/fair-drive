@@ -5,9 +5,10 @@ import { useTrips } from "./features/trips/hooks/useTrips";
 import { TripsPage } from "./features/trips/section/TripsPage";
 import { StatCard } from "./shared/components/StatCard";
 import { formatDate } from "./shared/dates";
-import { STORAGE_KEY, defaultPlayers, loadData, saveData } from "./shared/storage";
+import { STORAGE_KEY, defaultPlayers, loadData } from "./shared/storage";
 import { sortTrips } from "./shared/trips";
 import type { Injury, Tab, Trip } from "./shared/types";
+import { adminLogin, isAdmin, logout, saveData } from "./api";
 
 const App: React.FC = () => {
   const [players, setPlayers] = useState<string[]>(defaultPlayers);
@@ -19,6 +20,17 @@ const App: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
   const [activeTab, setActiveTab] = useState<Tab>("piano");
+
+  const [admin, setAdmin] = useState<boolean>(isAdmin());
+
+  const [showLogin, setShowLogin] = useState(false);
+
+  const [password, setPassword] = useState("");
+
+  const [loggingIn, setLoggingIn] = useState(false);
+  const [saving, setSaving] = useState(false);
+
+  const [saveMessage, setSaveMessage] = useState("");
 
   useEffect(() => {
     const loadInitialData = async (): Promise<void> => {
@@ -108,6 +120,59 @@ const App: React.FC = () => {
       }),
     );
   }, []);
+
+  const handleLogin = async () => {
+    if (!password.trim()) {
+      return;
+    }
+
+    try {
+      setLoggingIn(true);
+      setSaveMessage("");
+
+      await adminLogin(password);
+
+      setAdmin(true);
+      setPassword("");
+      setShowLogin(false);
+      setSaveMessage("");
+    } catch (error) {
+      setSaveMessage(error instanceof Error ? error.message : "Login fallito");
+    } finally {
+      setLoggingIn(false);
+    }
+  };
+
+  const handleLogout = () => {
+    logout();
+
+    setAdmin(false);
+    setSaveMessage("");
+  };
+
+  const handleSave = async () => {
+    if (!admin) {
+      setSaveMessage("Devi essere autenticato come admin");
+      return;
+    }
+
+    try {
+      setSaving(true);
+      setSaveMessage("");
+
+      await saveData({
+        players,
+        trips,
+        injuries,
+      });
+
+      setSaveMessage("✅ Modifiche pubblicate correttamente");
+    } catch (error) {
+      setSaveMessage(error instanceof Error ? error.message : "Errore durante la pubblicazione");
+    } finally {
+      setSaving(false);
+    }
+  };
 
   if (loading) {
     return <div className="loading-screen">Caricamento dati...</div>;
@@ -216,7 +281,104 @@ const App: React.FC = () => {
         )}
       </main>
 
-      <footer>I dati vengono salvati automaticamente.</footer>
+      <footer className="app-footer">
+        <div className="footer-content">
+          <span className="footer-brand">TurnoTeam</span>
+
+          <div className="footer-actions">
+            {admin && (
+              <>
+                <span className="admin-status">
+                  <span className="admin-status-dot" />
+                  Admin
+                </span>
+
+                <button
+                  className="publish-button"
+                  onClick={() => void handleSave()}
+                  disabled={saving}
+                >
+                  {saving ? (
+                    <>
+                      <span className="publish-spinner" />
+                      Pubblicazione...
+                    </>
+                  ) : (
+                    <>
+                      <span>💾</span>
+                      Pubblica modifiche
+                    </>
+                  )}
+                </button>
+
+                <button className="logout-button" onClick={handleLogout}>
+                  Esci
+                </button>
+              </>
+            )}
+
+            {!admin && (
+              <button className="admin-button" onClick={() => setShowLogin(true)}>
+                <span>🔒</span>
+                Accesso admin
+              </button>
+            )}
+          </div>
+        </div>
+      </footer>
+
+      {showLogin && (
+        <div className="admin-modal-backdrop" onClick={() => setShowLogin(false)}>
+          <div className="admin-modal" onClick={(event) => event.stopPropagation()}>
+            <div className="admin-modal-header">
+              <div className="admin-modal-icon">🔐</div>
+
+              <div>
+                <h2>Accesso admin</h2>
+
+                <p>Inserisci la password per modificare e pubblicare i dati.</p>
+              </div>
+            </div>
+
+            <input
+              className="admin-password-input"
+              type="password"
+              placeholder="Password"
+              value={password}
+              autoFocus
+              onChange={(event) => setPassword(event.target.value)}
+              onKeyDown={(event) => {
+                if (event.key === "Enter") {
+                  void handleLogin();
+                }
+              }}
+            />
+
+            {saveMessage && !admin && <div className="admin-login-error">{saveMessage}</div>}
+
+            <div className="admin-modal-actions">
+              <button
+                className="admin-cancel-button"
+                onClick={() => {
+                  setShowLogin(false);
+                  setPassword("");
+                  setSaveMessage("");
+                }}
+              >
+                Annulla
+              </button>
+
+              <button
+                className="admin-login-button"
+                onClick={() => void handleLogin()}
+                disabled={!password || loggingIn}
+              >
+                {loggingIn ? "Accesso..." : "Accedi"}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

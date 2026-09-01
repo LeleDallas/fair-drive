@@ -95,8 +95,8 @@ export const TripForm = ({
       </div>
 
       <div className="form-info">
-        ↔️ Verranno conteggiati automaticamente{" "}
-        <strong>{tripForm.km ? `${Number(tripForm.km) * 2} km` : "0 km"}</strong> tra andata e
+        ↔️ Verranno conteggiati automaticamente
+        <strong> {tripForm.km ? `${Number(tripForm.km) * 2} km` : "0 km"}</strong> tra andata e
         ritorno.
       </div>
 

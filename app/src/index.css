@@ -1014,3 +1014,408 @@ footer {
 .completed-schedule {
   margin-bottom: 30px;
 }
+
+.app-footer {
+  margin-top: 48px;
+  padding: 20px 24px;
+  border-top: 1px solid #e5e7eb;
+  background: #ffffff;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.footer-brand {
+  font-size: 13px;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.admin-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.admin-button:hover {
+  background: #f9fafb;
+  border-color: #d1d5db;
+  color: #374151;
+}
+
+.admin-button-active {
+  color: #166534;
+  border-color: #bbf7d0;
+  background: #f0fdf4;
+}
+
+.admin-icon {
+  font-size: 13px;
+}
+
+/* ------------------------- MODAL ------------------------- */
+.admin-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(15, 23, 42, 0.45);
+  z-index: 1000;
+  animation: adminBackdropIn 0.15s ease;
+}
+
+.admin-modal {
+  width: 100%;
+  max-width: 420px;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  animation: adminModalIn 0.18s ease;
+}
+
+.admin-modal-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.admin-modal-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #f3f4f6;
+  font-size: 19px;
+}
+
+.admin-modal h2 {
+  margin: 0 0 5px;
+  font-size: 19px;
+  color: #111827;
+}
+
+.admin-modal p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.admin-password-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.admin-password-input:focus {
+  border-color: #6b7280;
+  box-shadow: 0 0 0 3px rgba(107, 114, 128, 0.12);
+}
+
+.admin-login-error {
+  margin-top: 10px;
+  padding: 9px 11px;
+  border-radius: 7px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 13px;
+}
+
+.admin-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.admin-cancel-button,
+.admin-login-button {
+  padding: 9px 15px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-cancel-button {
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #6b7280;
+}
+
+.admin-cancel-button:hover {
+  background: #f9fafb;
+}
+
+.admin-login-button {
+  border: 1px solid #111827;
+  background: #111827;
+  color: #ffffff;
+}
+
+.admin-login-button:hover {
+  background: #374151;
+}
+
+.admin-login-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ------------------------- ANIMAZIONI ------------------------- */
+@keyframes adminBackdropIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes adminModalIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ------------------------- MOBILE ------------------------- */
+@media (max-width: 600px) {
+  .app-footer {
+    padding: 16px;
+  }
+
+  .footer-content {
+    align-items: center;
+  }
+
+  .admin-button {
+    padding: 7px 10px;
+  }
+
+  .admin-modal {
+    padding: 20px;
+    border-radius: 14px;
+  }
+}
+
+.app-footer {
+  margin-top: 48px;
+  padding: 20px 24px;
+
+  border-top: 1px solid #e5e7eb;
+
+  background: #ffffff;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 16px;
+}
+
+.footer-brand {
+  color: #9ca3af;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-button,
+.publish-button,
+.logout-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  padding: 8px 12px;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+
+/* Accesso admin */
+
+.admin-button {
+  border: 1px solid #e5e7eb;
+
+  background: #ffffff;
+  color: #6b7280;
+}
+
+.admin-button:hover {
+  background: #f9fafb;
+  border-color: #d1d5db;
+  color: #374151;
+}
+
+
+/* Stato admin */
+
+.admin-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 8px 10px;
+
+  color: #166534;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.admin-status-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #22c55e;
+}
+
+
+/* Pubblica */
+
+.publish-button {
+  border: 1px solid #166534;
+
+  background: #166534;
+  color: #ffffff;
+
+  font-weight: 600;
+}
+
+.publish-button:hover:not(:disabled) {
+  background: #14532d;
+}
+
+.publish-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* Logout */
+
+.logout-button {
+  border: 1px solid #e5e7eb;
+
+  background: #ffffff;
+  color: #6b7280;
+}
+
+.logout-button:hover {
+  background: #fef2f2;
+  border-color: #fecaca;
+  color: #b91c1c;
+}
+
+
+/* Spinner */
+
+.publish-spinner {
+  width: 12px;
+  height: 12px;
+
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #ffffff;
+
+  border-radius: 50%;
+
+  animation: publish-spin 0.7s linear infinite;
+}
+
+@keyframes publish-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .app-footer {
+    padding: 16px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .footer-brand {
+    text-align: center;
+  }
+
+  .footer-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .publish-button {
+    flex: 1;
+  }
+}
