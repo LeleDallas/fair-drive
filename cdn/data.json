@@ -7,7 +7,30 @@
     "Simo",
     "Sinto"
   ],
-  "trips": [],
+  "trips": [
+    {
+      "id": "9ec73ba5-41f5-4bb0-8cf7-68df45bd6ada",
+      "date": "2026-09-01",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": null,
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "272867a6-0dae-41d6-a008-79ef45d8d122",
+      "date": "2026-09-04",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": null,
+      "automatic": true,
+      "completed": false
+    }
+  ],
   "injuries": [
     {
       "id": "68d27aac-1fa6-4f0e-a7b5-ffabd3d1ef43",
