@@ -15,7 +15,7 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": null,
+      "driver": "Lion",
       "automatic": true,
       "completed": false
     },
@@ -26,7 +26,7 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": null,
+      "driver": "Mateo",
       "automatic": true,
       "completed": false
     },
@@ -37,7 +37,7 @@
       "name": "[Borello] Triangolare",
       "km": 10,
       "totalKm": 20,
-      "driver": null,
+      "driver": "Simo",
       "automatic": false,
       "completed": false
     },
@@ -48,7 +48,7 @@
       "name": "Bagnese 🏆",
       "km": 47,
       "totalKm": 94,
-      "driver": null,
+      "driver": "Dallas",
       "automatic": false,
       "completed": false
     },
@@ -59,7 +59,7 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": null,
+      "driver": "Giorna",
       "automatic": true,
       "completed": false
     }
