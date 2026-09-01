@@ -40,6 +40,17 @@
       "driver": null,
       "automatic": false,
       "completed": false
+    },
+    {
+      "id": "12e88dec-85fa-45f4-a26c-093d7ee5f9d4",
+      "date": "2026-09-06",
+      "type": "Partita",
+      "name": "Bagnese 🏆",
+      "km": 47,
+      "totalKm": 94,
+      "driver": null,
+      "automatic": false,
+      "completed": false
     }
   ],
   "injuries": [
