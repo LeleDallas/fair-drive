@@ -17,7 +17,7 @@
       "totalKm": 40,
       "driver": "Lion",
       "automatic": true,
-      "completed": false
+      "completed": true
     },
     {
       "id": "272867a6-0dae-41d6-a008-79ef45d8d122",
@@ -71,5 +71,6 @@
       "from": "2026-09-01",
       "to": "2026-12-31"
     }
-  ]
+  ],
+  "updatedAt": "2026-09-02T04:12:32.428Z"
 }
