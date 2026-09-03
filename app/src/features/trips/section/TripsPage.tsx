@@ -6,6 +6,11 @@ import { TripRow } from "../TripRow";
 import type { Trip } from "../../../shared/types";
 import type { GeneratorForm, TripForm as TripFormState } from "../types";
 
+export interface Driver {
+  id: string;
+  name: string;
+}
+
 interface TripsPageProps {
   trips: Trip[];
   sortedTrips: Trip[];
@@ -20,6 +25,7 @@ interface TripsPageProps {
   editTrip: (trip: Trip) => void;
   deleteTrip: (id: string) => void;
   generateAutomaticTrainings: () => void;
+  players: string[]
 }
 
 export const TripsPage = ({
@@ -36,6 +42,7 @@ export const TripsPage = ({
   editTrip,
   deleteTrip,
   generateAutomaticTrainings,
+  players,
 }: TripsPageProps) => {
   return (
     <section>
@@ -67,6 +74,7 @@ export const TripsPage = ({
         editingTripId={editingTripId}
         onSubmit={handleTripSubmit}
         onCancel={resetTripForm}
+        players={players}
       />
 
       <div className="section-title trips-heading">

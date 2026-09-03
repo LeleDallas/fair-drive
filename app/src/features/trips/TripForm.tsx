@@ -2,12 +2,18 @@ import type { FormEvent } from "react";
 import type { TripType } from "../../shared/types";
 import type { TripForm as TripFormState } from "./types";
 
+export interface Driver {
+  id: string;
+  name: string;
+}
+
 interface TripFormProps {
   tripForm: TripFormState;
   setTripForm: (form: TripFormState) => void;
   editingTripId: string | null;
   onSubmit: (event: FormEvent<HTMLFormElement>) => void;
   onCancel: () => void;
+  players: string[]
 }
 
 export const TripForm = ({
@@ -16,6 +22,7 @@ export const TripForm = ({
   editingTripId,
   onSubmit,
   onCancel,
+  players,
 }: TripFormProps) => {
   return (
     <form className="card form-card" onSubmit={onSubmit}>
@@ -50,9 +57,7 @@ export const TripForm = ({
             }
           >
             <option value="Allenamento">Allenamento</option>
-
             <option value="Partita">Partita</option>
-
             <option value="Altro">Altro</option>
           </select>
         </label>
@@ -73,6 +78,26 @@ export const TripForm = ({
         </label>
 
         <label>
+          Chi fa la macchina
+          <select
+            value={tripForm.driverId || ""}
+            onChange={(event) =>
+              setTripForm({
+                ...tripForm,
+                driverId: event.target.value || null,
+              })
+            }
+          >
+            <option value="">Nessuno / Da assegnare</option>
+            {players.map((player) => (
+              <option key={player} value={player}>
+                {player}
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <label>
           Km di andata
           <div className="km-input">
             <input
@@ -88,7 +113,6 @@ export const TripForm = ({
                 })
               }
             />
-
             <span>km</span>
           </div>
         </label>

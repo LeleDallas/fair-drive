@@ -42,6 +42,8 @@ export const useTrips = (
       ? trips.find((trip) => trip.id === editingTripId)
       : undefined;
 
+      const selectedDriverId: string | null = tripForm.driverId || null;
+
     const trip: Trip = {
       id: editingTripId ?? createId(),
       date: tripForm.date,
@@ -55,7 +57,7 @@ export const useTrips = (
             : "Trasferta"),
       km: oneWayKm,
       totalKm: oneWayKm * 2,
-      driver: existingTrip?.driver ?? null,
+      driver: selectedDriverId ?? existingTrip?.driver ?? null,
       automatic: existingTrip?.automatic ?? tripForm.type === "Allenamento",
       completed: existingTrip?.completed ?? false,
     };
@@ -77,6 +79,7 @@ export const useTrips = (
       type: trip.type,
       name: trip.name,
       km: String(trip.km),
+      driverId: trip.driver ?? "",
     });
 
     setActiveTab("trasferte");

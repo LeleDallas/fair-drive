@@ -264,6 +264,7 @@ const App: React.FC = () => {
             editTrip={tripsApi.editTrip}
             deleteTrip={tripsApi.deleteTrip}
             generateAutomaticTrainings={tripsApi.generateAutomaticTrainings}
+            players={players}
           />
         )}
 
@@ -283,7 +284,7 @@ const App: React.FC = () => {
 
       <footer className="app-footer">
         <div className="footer-content">
-          <span className="footer-brand">TurnoTeam</span>
+          <span className="footer-brand">Fair Drive · LeleDallas</span>
 
           <div className="footer-actions">
             {admin && (
