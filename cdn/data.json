@@ -64,5 +64,12 @@
       "completed": false
     }
   ],
-  "injuries": []
+  "injuries": [
+    {
+      "id": "061f9c7b-a0b5-46da-8281-5aa6e23f374a",
+      "player": "Sinto",
+      "from": "2026-09-01",
+      "to": "2026-12-31"
+    }
+  ]
 }
