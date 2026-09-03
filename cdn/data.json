@@ -7,6 +7,40 @@
     "Simo",
     "Sinto"
   ],
-  "trips": [],
+  "trips": [
+    {
+      "id": "eff67257-ddc8-4609-898c-a2b20700b638",
+      "date": "2026-09-01",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": null,
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "10471450-4234-43d2-b06b-d7c98f984ea5",
+      "date": "2026-09-04",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": null,
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "b277a7eb-0dd0-496f-be62-415021517039",
+      "date": "2026-09-02",
+      "type": "Partita",
+      "name": "Triangolare [Borello]",
+      "km": 10,
+      "totalKm": 20,
+      "driver": "Simo",
+      "automatic": false,
+      "completed": false
+    }
+  ],
   "injuries": []
 }
