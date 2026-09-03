@@ -15,7 +15,7 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": null,
+      "driver": "Lion",
       "automatic": true,
       "completed": false
     },
