@@ -51,6 +51,17 @@
       "driver": "Dallas",
       "automatic": false,
       "completed": false
+    },
+    {
+      "id": "0050ba35-9be8-4af6-a181-d4c7f1acad86",
+      "date": "2026-09-03",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Giorna",
+      "automatic": true,
+      "completed": false
     }
   ],
   "injuries": []
