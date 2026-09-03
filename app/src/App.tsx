@@ -46,10 +46,6 @@ const App: React.FC = () => {
     void loadInitialData();
   }, []);
 
-  useEffect(() => {
-    saveData({ players, trips, injuries });
-  }, [players, trips, injuries]);
-
   const sortedTrips = useMemo<Trip[]>(() => sortTrips(trips), [trips]);
 
   const assignedTrips = useMemo<Trip[]>(
