@@ -26,7 +26,7 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": null,
+      "driver": "Mateo",
       "automatic": true,
       "completed": false
     },
