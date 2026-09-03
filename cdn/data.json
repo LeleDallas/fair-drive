@@ -40,6 +40,17 @@
       "driver": "Simo",
       "automatic": false,
       "completed": false
+    },
+    {
+      "id": "8427849d-00af-44b9-ad44-835661d26505",
+      "date": "2026-09-06",
+      "type": "Partita",
+      "name": "Bagnese 🏆",
+      "km": 47,
+      "totalKm": 94,
+      "driver": "Dallas",
+      "automatic": false,
+      "completed": false
     }
   ],
   "injuries": []
