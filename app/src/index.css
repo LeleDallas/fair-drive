@@ -1294,7 +1294,6 @@ footer {
     opacity 0.2s ease;
 }
 
-
 /* Accesso admin */
 
 .admin-button {
@@ -1309,7 +1308,6 @@ footer {
   border-color: #d1d5db;
   color: #374151;
 }
-
 
 /* Stato admin */
 
@@ -1335,7 +1333,6 @@ footer {
   background: #22c55e;
 }
 
-
 /* Pubblica */
 
 .publish-button {
@@ -1356,7 +1353,6 @@ footer {
   cursor: not-allowed;
 }
 
-
 /* Logout */
 
 .logout-button {
@@ -1371,7 +1367,6 @@ footer {
   border-color: #fecaca;
   color: #b91c1c;
 }
-
 
 /* Spinner */
 
@@ -1392,7 +1387,6 @@ footer {
     transform: rotate(360deg);
   }
 }
-
 
 /* Mobile */
 

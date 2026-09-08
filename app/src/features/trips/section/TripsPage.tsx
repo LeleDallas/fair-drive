@@ -25,7 +25,7 @@ interface TripsPageProps {
   editTrip: (trip: Trip) => void;
   deleteTrip: (id: string) => void;
   generateAutomaticTrainings: () => void;
-  players: string[]
+  players: string[];
 }
 
 export const TripsPage = ({
