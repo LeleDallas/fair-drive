@@ -62,6 +62,50 @@
       "driver": "Mateo",
       "automatic": true,
       "completed": true
+    },
+    {
+      "id": "322a5f83-3c55-4808-a0d1-85c767f8668d",
+      "date": "2026-09-08",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Giorna",
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "eec3943b-ea84-4e10-ac6d-684b50b85a6c",
+      "date": "2026-09-09",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Simo",
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "d525ca65-a242-4a38-91d0-ffbb0fc00a18",
+      "date": "2026-09-11",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Lion",
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "e03fe8d3-bd1a-4519-bc56-cd499577c9b5",
+      "date": "2026-09-13",
+      "type": "Partita",
+      "name": "Gambettola [Borello]",
+      "km": 10,
+      "totalKm": 20,
+      "driver": "Giorna",
+      "automatic": false,
+      "completed": false
     }
   ],
   "injuries": [
@@ -71,6 +115,5 @@
       "from": "2026-09-01",
       "to": "2026-12-31"
     }
-  ],
-  "updatedAt": "2026-09-07T04:18:56.876Z"
+  ]
 }
