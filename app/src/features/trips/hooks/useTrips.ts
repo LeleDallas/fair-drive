@@ -42,7 +42,7 @@ export const useTrips = (
       ? trips.find((trip) => trip.id === editingTripId)
       : undefined;
 
-      const selectedDriverId: string | null = tripForm.driverId || null;
+    const selectedDriverId: string | null = tripForm.driverId || null;
 
     const trip: Trip = {
       id: editingTripId ?? createId(),

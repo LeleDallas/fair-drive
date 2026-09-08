@@ -13,7 +13,7 @@ interface TripFormProps {
   editingTripId: string | null;
   onSubmit: (event: FormEvent<HTMLFormElement>) => void;
   onCancel: () => void;
-  players: string[]
+  players: string[];
 }
 
 export const TripForm = ({

@@ -15,22 +15,20 @@ export const usePlan = (
       return;
     }
 
-    const tripsWithoutKm: Trip[] = trips.filter((trip) => trip.totalKm <= 0);
+    const pendingTrips = trips.filter((trip) => !trip.completed);
 
-    if (tripsWithoutKm.length > 0) {
-      alert(
-        `Ci sono ${tripsWithoutKm.length} trasferte senza chilometri. Inserisci i km prima di generare i turni.`,
-      );
+    if (pendingTrips.length === 0) {
+      alert("Tutte le trasferte sono già state completate.");
       return;
     }
 
-    const sorted: Trip[] = [...trips].sort((a, b) => {
-      if (b.totalKm !== a.totalKm) {
-        return b.totalKm - a.totalKm;
-      }
-
-      return new Date(a.date).getTime() - new Date(b.date).getTime();
-    });
+    const tripsWithoutKm = pendingTrips.filter((trip) => trip.totalKm <= 0);
+    if (tripsWithoutKm.length > 0) {
+      alert(
+        `Ci sono ${tripsWithoutKm.length} trasferte da completare senza chilometri. Inserisci i km prima di generare i turni.`,
+      );
+      return;
+    }
 
     const km: Record<string, number> = {};
     const turns: Record<string, number> = {};
@@ -41,7 +39,21 @@ export const usePlan = (
       turns[player] = 0;
     });
 
-    sorted.forEach((trip) => {
+    trips.forEach((trip) => {
+      if (trip.completed && trip.driver) {
+        km[trip.driver] = (km[trip.driver] || 0) + trip.totalKm;
+        turns[trip.driver] = (turns[trip.driver] || 0) + 1;
+      }
+    });
+
+    const sortedPending: Trip[] = [...pendingTrips].sort((a, b) => {
+      if (b.totalKm !== a.totalKm) {
+        return b.totalKm - a.totalKm;
+      }
+      return new Date(a.date).getTime() - new Date(b.date).getTime();
+    });
+
+    sortedPending.forEach((trip) => {
       const availablePlayers: string[] = players.filter(
         (player) => !isPlayerInjuredOnDate(injuries, player, trip.date),
       );
@@ -71,7 +83,7 @@ export const usePlan = (
     setTrips((current) =>
       current.map((trip) => ({
         ...trip,
-        driver: assignments[trip.id] ?? null,
+        driver: trip.completed ? trip.driver : (assignments[trip.id] ?? null),
       })),
     );
 
@@ -79,7 +91,7 @@ export const usePlan = (
   };
 
   const clearAssignments = (): void => {
-    const confirmed = window.confirm("Vuoi cancellare tutti i turni assegnati?");
+    const confirmed = window.confirm("Vuoi cancellare i turni non ancora completati?");
 
     if (!confirmed) {
       return;
@@ -88,7 +100,7 @@ export const usePlan = (
     setTrips((current) =>
       current.map((trip) => ({
         ...trip,
-        driver: null,
+        driver: trip.completed ? trip.driver : null,
       })),
     );
   };
