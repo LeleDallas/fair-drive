@@ -70,7 +70,7 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Giorna",
+      "driver": "Simo",
       "automatic": true,
       "completed": true
     },
@@ -81,7 +81,7 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Simo",
+      "driver": "Giorna",
       "automatic": true,
       "completed": false
     },
@@ -115,6 +115,5 @@
       "from": "2026-09-01",
       "to": "2026-12-31"
     }
-  ],
-  "updatedAt": "2026-09-09T04:25:03.774Z"
+  ]
 }
