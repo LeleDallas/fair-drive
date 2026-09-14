@@ -106,7 +106,7 @@
       "totalKm": 20,
       "driver": "Giorna",
       "automatic": false,
-      "completed": false
+      "completed": true
     }
   ],
   "injuries": [
@@ -117,5 +117,5 @@
       "to": "2026-12-31"
     }
   ],
-  "updatedAt": "2026-09-12T04:20:29.416Z"
+  "updatedAt": "2026-09-14T04:39:32.574Z"
 }
