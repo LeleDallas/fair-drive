@@ -107,6 +107,39 @@
       "driver": "Giorna",
       "automatic": false,
       "completed": true
+    },
+    {
+      "id": "cc3c9b50-f8fb-4cdb-b24b-26c0b819c13c",
+      "date": "2026-09-15",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Dallas",
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "a66e7e6c-4376-4d4f-b389-ebf6d6b481af",
+      "date": "2026-09-16",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Gobbi",
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "000f037f-97c8-4ffc-a6fb-4ed147958df1",
+      "date": "2026-09-18",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Giorna",
+      "automatic": true,
+      "completed": false
     }
   ],
   "injuries": [
@@ -116,6 +149,5 @@
       "from": "2026-09-01",
       "to": "2026-12-31"
     }
-  ],
-  "updatedAt": "2026-09-14T04:39:32.574Z"
+  ]
 }
