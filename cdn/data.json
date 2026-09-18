@@ -82,7 +82,7 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Giorna",
+      "driver": "Dallas",
       "automatic": true,
       "completed": true
     },
@@ -93,7 +93,7 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Lion",
+      "driver": "Giorna",
       "automatic": true,
       "completed": true
     },
@@ -137,8 +137,41 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Giorna",
+      "driver": "Mateo",
       "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "13c86ba3-330f-4ff6-bf36-b64b10be7046",
+      "date": "2026-09-11",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Mateo",
+      "automatic": true,
+      "completed": true
+    },
+    {
+      "id": "59634b1d-c00d-457b-9cb5-44f621cd17db",
+      "date": "2026-09-20",
+      "type": "Allenamento",
+      "name": "Acc. Marignanese",
+      "km": 60,
+      "totalKm": 120,
+      "driver": "Simo",
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "2b6eb2e3-cede-4da4-88e4-9deaeb3a2c85",
+      "date": "2026-09-19",
+      "type": "Altro",
+      "name": "Presentazione squadra 19:00",
+      "km": 20,
+      "totalKm": 40,
+      "driver": null,
+      "automatic": false,
       "completed": false
     }
   ],
@@ -149,6 +182,5 @@
       "from": "2026-09-01",
       "to": "2026-12-31"
     }
-  ],
-  "updatedAt": "2026-09-17T04:40:53.673Z"
+  ]
 }
