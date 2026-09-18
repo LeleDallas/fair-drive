@@ -2,7 +2,7 @@ import type { Trip } from "./types";
 
 export const sortTrips = (trips: Trip[]): Trip[] => {
   return [...trips].sort((a, b) => {
-    const dateDifference = new Date(a.date).getTime() - new Date(b.date).getTime();
+    const dateDifference = new Date(b.date).getTime() - new Date(a.date).getTime();
 
     if (dateDifference !== 0) {
       return dateDifference;

@@ -355,6 +355,55 @@ select:focus {
   gap: 9px;
 }
 
+.trip-months {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.trip-month {
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.64);
+  border: 1px solid #dfe7e1;
+  border-radius: 16px;
+}
+
+.trip-month summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 15px 17px;
+  cursor: pointer;
+  color: #304338;
+  font-size: 14px;
+  font-weight: 800;
+  list-style: none;
+}
+
+.trip-month summary::-webkit-details-marker {
+  display: none;
+}
+
+.trip-month summary::after {
+  content: "+";
+  color: #5a9364;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.trip-month[open] summary {
+  border-bottom: 1px solid #e7ece8;
+}
+
+.trip-month[open] summary::after {
+  content: "−";
+}
+
+.trip-month .trip-list {
+  padding: 10px;
+}
+
 .trip-row,
 .schedule-row {
   background: white;

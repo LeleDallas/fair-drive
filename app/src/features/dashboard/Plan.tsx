@@ -1,4 +1,5 @@
 import { EmptyState } from "../../shared/components/EmptyState";
+import { sortTrips } from "../../shared/trips";
 import type { Trip } from "../../shared/types";
 
 interface PlanProps {
@@ -29,8 +30,18 @@ export const Plan: React.FC<PlanProps> = ({
   deleteTrip,
 }: PlanProps) => {
   const hasPlan: boolean = trips.some((trip) => trip.driver !== null);
-  const completedTrips: Trip[] = trips.filter((trip) => trip.completed);
-  const pendingTrips: Trip[] = trips.filter((trip) => !trip.completed);
+  const sortedTrips: Trip[] = sortTrips(trips);
+  const completedTrips: Trip[] = sortedTrips.filter((trip) => trip.completed);
+  const pendingTrips: Trip[] = sortedTrips.filter((trip) => !trip.completed);
+  const completedByMonth = completedTrips.reduce<Map<string, Trip[]>>((groups, trip) => {
+    const monthKey = trip.date.slice(0, 7);
+    const monthTrips = groups.get(monthKey) ?? [];
+
+    monthTrips.push(trip);
+    groups.set(monthKey, monthTrips);
+
+    return groups;
+  }, new Map());
 
   return (
     <section>
@@ -166,31 +177,53 @@ export const Plan: React.FC<PlanProps> = ({
                   </div>
                   <span className="counter"> ✓ {completedTrips.length} </span>
                 </div>
-                <div className="schedule completed-schedule">
-                  {completedTrips.map((trip) => (
-                    <div className="schedule-row completed-row" key={trip.id}>
-                      <div className="schedule-date">
-                        <strong> {formatDate(trip.date)} </strong> <span> {trip.type} </span>
-                      </div>
-                      <div className="schedule-name">
-                        <strong> ✓ {trip.name} </strong>
+                <div className="trip-months completed-schedule">
+                  {[...completedByMonth.entries()].map(([monthKey, monthTrips], index) => (
+                    <details className="trip-month" key={monthKey} open={index === 0}>
+                      <summary>
                         <span>
-                          {trip.km} km andata · {trip.totalKm} km totali
+                          {new Intl.DateTimeFormat("it-IT", {
+                            month: "long",
+                            year: "numeric",
+                          }).format(new Date(`${monthKey}-01T12:00:00`))}
                         </span>
+
+                        <span className="counter">{monthTrips.length} eventi</span>
+                      </summary>
+
+                      <div className="schedule completed-schedule">
+                        {monthTrips.map((trip) => (
+                          <div className="schedule-row completed-row" key={trip.id}>
+                            <div className="schedule-date">
+                              <strong>{formatDate(trip.date)}</strong>
+                              <span>{trip.type}</span>
+                            </div>
+                            <div className="schedule-name">
+                              <strong>✓ {trip.name}</strong>
+                              <span>
+                                {trip.km} km andata · {trip.totalKm} km totali
+                              </span>
+                            </div>
+                            <div className="driver">
+                              <span>🚗</span>
+                              <strong>{trip.driver || "Non assegnato"}</strong>
+                            </div>
+                            <div className="row-actions">
+                              <button
+                                className="reopen"
+                                onClick={() => setTripCompleted(trip.id, false)}
+                              >
+                                ↩ Ripristina
+                              </button>
+                              <button onClick={() => editTrip(trip)}>Modifica</button>
+                              <button className="delete" onClick={() => deleteTrip(trip.id)}>
+                                Elimina
+                              </button>
+                            </div>
+                          </div>
+                        ))}
                       </div>
-                      <div className="driver">
-                        <span>🚗</span> <strong> {trip.driver || "Non assegnato"} </strong>
-                      </div>
-                      <div className="row-actions">
-                        <button className="reopen" onClick={() => setTripCompleted(trip.id, false)}>
-                          ↩ Ripristina
-                        </button>
-                        <button onClick={() => editTrip(trip)}> Modifica </button>
-                        <button className="delete" onClick={() => deleteTrip(trip.id)}>
-                          Elimina
-                        </button>
-                      </div>
-                    </div>
+                    </details>
                   ))}
                 </div>
               </>
