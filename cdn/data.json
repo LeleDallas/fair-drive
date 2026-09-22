@@ -173,6 +173,61 @@
       "driver": null,
       "automatic": false,
       "completed": true
+    },
+    {
+      "id": "f663f9fe-f321-43c2-a2e0-082582c58b90",
+      "date": "2026-09-22",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Dallas",
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "a47405c9-6dbc-4be0-8031-f99dfdf0e80b",
+      "date": "2026-09-23",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Giorna",
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "e747e95b-d7e1-4114-afae-158f36f16d62",
+      "date": "2026-09-25",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Gobbi",
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "92732404-bc69-463b-ab27-ade0fe5fba6d",
+      "date": "2026-09-27",
+      "type": "Partita",
+      "name": "Capanni [Borello]",
+      "km": 10,
+      "totalKm": 20,
+      "driver": "Giorna",
+      "automatic": false,
+      "completed": false
+    },
+    {
+      "id": "98c87ffb-a480-4831-b0b4-964002224a8f",
+      "date": "2026-09-22",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Sinto",
+      "automatic": true,
+      "completed": false
     }
   ],
   "injuries": [
@@ -181,7 +236,12 @@
       "player": "Sinto",
       "from": "2026-09-01",
       "to": "2026-12-31"
+    },
+    {
+      "id": "9e490d12-e279-4968-a9c8-769a03e14e0b",
+      "player": "Lion",
+      "from": "2026-09-21",
+      "to": "2027-06-22"
     }
-  ],
-  "updatedAt": "2026-09-21T04:40:07.618Z"
+  ]
 }
