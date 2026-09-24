@@ -194,7 +194,7 @@
       "totalKm": 40,
       "driver": "Giorna",
       "automatic": true,
-      "completed": false
+      "completed": true
     },
     {
       "id": "e747e95b-d7e1-4114-afae-158f36f16d62",
@@ -244,5 +244,5 @@
       "to": "2027-06-22"
     }
   ],
-  "updatedAt": "2026-09-23T04:32:41.458Z"
+  "updatedAt": "2026-09-24T04:29:51.237Z"
 }
