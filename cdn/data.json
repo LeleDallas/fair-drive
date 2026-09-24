@@ -192,7 +192,7 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Giorna",
+      "driver": "Mateo",
       "automatic": true,
       "completed": true
     },
@@ -243,6 +243,5 @@
       "from": "2026-09-21",
       "to": "2027-06-22"
     }
-  ],
-  "updatedAt": "2026-09-24T04:29:51.237Z"
+  ]
 }
