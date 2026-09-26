@@ -205,7 +205,7 @@
       "totalKm": 40,
       "driver": "Gobbi",
       "automatic": true,
-      "completed": false
+      "completed": true
     },
     {
       "id": "92732404-bc69-463b-ab27-ade0fe5fba6d",
@@ -243,5 +243,6 @@
       "from": "2026-09-21",
       "to": "2027-06-22"
     }
-  ]
+  ],
+  "updatedAt": "2026-09-26T04:43:49.695Z"
 }
