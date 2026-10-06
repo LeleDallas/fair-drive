@@ -261,6 +261,50 @@
       "driver": "Mateo",
       "automatic": true,
       "completed": true
+    },
+    {
+      "id": "d3e41da9-d110-406e-8024-2eb00678b751",
+      "date": "2026-10-04",
+      "type": "Partita",
+      "name": "San Bartolo",
+      "km": 50,
+      "totalKm": 100,
+      "driver": "Giorna",
+      "automatic": false,
+      "completed": true
+    },
+    {
+      "id": "8d6c6d1a-3237-49a8-b47e-f292db3f3801",
+      "date": "2026-10-06",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": null,
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "13bfd7a7-b969-4337-8e1e-3bfb44b5884c",
+      "date": "2026-10-09",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": null,
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "f0c125a4-e615-482e-8681-0e3be8789a17",
+      "date": "2026-10-07",
+      "type": "Partita",
+      "name": "Santermete [Borello]",
+      "km": 20,
+      "totalKm": 40,
+      "driver": null,
+      "automatic": false,
+      "completed": false
     }
   ],
   "injuries": [
@@ -276,6 +320,5 @@
       "from": "2026-09-21",
       "to": "2027-06-22"
     }
-  ],
-  "updatedAt": "2026-10-03T05:04:29.298Z"
+  ]
 }
