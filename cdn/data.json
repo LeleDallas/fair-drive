@@ -305,6 +305,17 @@
       "driver": null,
       "automatic": false,
       "completed": false
+    },
+    {
+      "id": "bb9663db-c534-4c17-8276-bedcd7751dc8",
+      "date": "2026-10-06",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Sinto",
+      "automatic": true,
+      "completed": true
     }
   ],
   "injuries": [
