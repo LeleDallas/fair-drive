@@ -302,7 +302,7 @@
       "name": "Santermete [Borello]",
       "km": 10,
       "totalKm": 20,
-      "driver": null,
+      "driver": "Dallas",
       "automatic": false,
       "completed": true
     },
@@ -316,6 +316,17 @@
       "driver": "Sinto",
       "automatic": true,
       "completed": true
+    },
+    {
+      "id": "24a319e8-9418-4e11-8661-25bc685d9087",
+      "date": "2026-10-11",
+      "type": "Partita",
+      "name": "Cattolica [Borello]",
+      "km": 10,
+      "totalKm": 20,
+      "driver": null,
+      "automatic": false,
+      "completed": false
     }
   ],
   "injuries": [
@@ -331,6 +342,5 @@
       "from": "2026-09-21",
       "to": "2027-06-22"
     }
-  ],
-  "updatedAt": "2026-10-08T05:48:00.463Z"
+  ]
 }
