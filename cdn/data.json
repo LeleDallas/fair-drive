@@ -304,7 +304,7 @@
       "totalKm": 20,
       "driver": null,
       "automatic": false,
-      "completed": false
+      "completed": true
     },
     {
       "id": "bb9663db-c534-4c17-8276-bedcd7751dc8",
@@ -331,5 +331,6 @@
       "from": "2026-09-21",
       "to": "2027-06-22"
     }
-  ]
+  ],
+  "updatedAt": "2026-10-08T05:48:00.463Z"
 }
