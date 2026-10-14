@@ -324,9 +324,75 @@
       "name": "Cattolica [Borello]",
       "km": 10,
       "totalKm": 20,
-      "driver": null,
+      "driver": "Mateo",
       "automatic": false,
       "completed": true
+    },
+    {
+      "id": "a2052d84-05c1-4d6b-9550-da892b2e4de9",
+      "date": "2026-10-13",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Simo",
+      "automatic": true,
+      "completed": true
+    },
+    {
+      "id": "3622be70-0dee-4653-b499-5602cb0fa91e",
+      "date": "2026-10-14",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Sinto",
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "e8461e01-5661-48b8-bf71-b6c8c3257bd8",
+      "date": "2026-10-16",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Dallas",
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "0ebfdb3b-dad9-420a-b407-de72891f34f4",
+      "date": "2026-10-13",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 16.5,
+      "totalKm": 33,
+      "driver": "Sinto",
+      "automatic": true,
+      "completed": true
+    },
+    {
+      "id": "4823facd-410c-494d-ae75-1b21422f4c5f",
+      "date": "2026-10-14",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Simo",
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "108b931e-3ae5-4756-98db-6d857d076ea1",
+      "date": "2026-10-18",
+      "type": "Partita",
+      "name": "Victoria",
+      "km": 35,
+      "totalKm": 70,
+      "driver": null,
+      "automatic": false,
+      "completed": false
     }
   ],
   "injuries": [
@@ -342,6 +408,5 @@
       "from": "2026-09-21",
       "to": "2027-06-22"
     }
-  ],
-  "updatedAt": "2026-10-12T05:41:33.808Z"
+  ]
 }
