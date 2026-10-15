@@ -348,7 +348,7 @@
       "totalKm": 40,
       "driver": "Sinto",
       "automatic": true,
-      "completed": false
+      "completed": true
     },
     {
       "id": "e8461e01-5661-48b8-bf71-b6c8c3257bd8",
@@ -381,7 +381,7 @@
       "totalKm": 40,
       "driver": "Simo",
       "automatic": true,
-      "completed": false
+      "completed": true
     },
     {
       "id": "108b931e-3ae5-4756-98db-6d857d076ea1",
@@ -408,5 +408,6 @@
       "from": "2026-09-21",
       "to": "2027-06-22"
     }
-  ]
+  ],
+  "updatedAt": "2026-10-15T04:21:20.982Z"
 }
