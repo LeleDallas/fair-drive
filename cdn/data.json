@@ -359,7 +359,7 @@
       "totalKm": 40,
       "driver": "Dallas",
       "automatic": true,
-      "completed": false
+      "completed": true
     },
     {
       "id": "0ebfdb3b-dad9-420a-b407-de72891f34f4",
@@ -409,5 +409,5 @@
       "to": "2027-06-22"
     }
   ],
-  "updatedAt": "2026-10-15T04:21:20.982Z"
+  "updatedAt": "2026-10-17T04:06:57.176Z"
 }
