@@ -390,9 +390,53 @@
       "name": "Victoria",
       "km": 35,
       "totalKm": 70,
-      "driver": null,
+      "driver": "Mateo",
       "automatic": false,
       "completed": true
+    },
+    {
+      "id": "a2db709a-ad11-4e5d-ab04-59625e8d9fe5",
+      "date": "2026-10-20",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Dallas",
+      "automatic": true,
+      "completed": true
+    },
+    {
+      "id": "4f20878d-79ba-4028-bd28-f462be0125d0",
+      "date": "2026-10-21",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Simo",
+      "automatic": true,
+      "completed": true
+    },
+    {
+      "id": "4518712a-9221-4af5-b137-61831d0b336d",
+      "date": "2026-10-23",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": null,
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "25f3c38f-0986-4f81-b23f-eddf808eac91",
+      "date": "2026-10-25",
+      "type": "Partita",
+      "name": "[Borello] Torconca",
+      "km": 10,
+      "totalKm": 20,
+      "driver": null,
+      "automatic": false,
+      "completed": false
     }
   ],
   "injuries": [
@@ -408,6 +452,5 @@
       "from": "2026-09-21",
       "to": "2027-06-22"
     }
-  ],
-  "updatedAt": "2026-10-19T04:23:35.377Z"
+  ]
 }
