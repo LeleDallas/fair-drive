@@ -436,7 +436,7 @@
       "totalKm": 20,
       "driver": null,
       "automatic": false,
-      "completed": false
+      "completed": true
     }
   ],
   "injuries": [
@@ -453,5 +453,5 @@
       "to": "2027-06-22"
     }
   ],
-  "updatedAt": "2026-10-24T04:20:49.804Z"
+  "updatedAt": "2026-10-26T04:27:20.876Z"
 }
