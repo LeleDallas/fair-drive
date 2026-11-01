@@ -437,6 +437,39 @@
       "driver": null,
       "automatic": false,
       "completed": true
+    },
+    {
+      "id": "752f2cd5-b9f5-495a-aff0-fc36155722e7",
+      "date": "2026-10-27",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Simo",
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "1c3515c5-a16b-4dc6-a564-d1c92e082139",
+      "date": "2026-10-28",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Dallas",
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "dd7afb5a-936f-486a-beb1-8cb8210c8567",
+      "date": "2026-10-30",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "driver": "Sinto",
+      "automatic": true,
+      "completed": false
     }
   ],
   "injuries": [
@@ -452,6 +485,5 @@
       "from": "2026-09-21",
       "to": "2027-06-22"
     }
-  ],
-  "updatedAt": "2026-10-26T04:27:20.876Z"
+  ]
 }
