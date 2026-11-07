@@ -480,7 +480,7 @@
       "totalKm": 40,
       "driver": "Giorna",
       "automatic": true,
-      "completed": false
+      "completed": true
     },
     {
       "id": "92b3640f-54c7-43bd-a09d-1033910aa222",
@@ -491,7 +491,7 @@
       "totalKm": 40,
       "driver": null,
       "automatic": true,
-      "completed": false
+      "completed": true
     },
     {
       "id": "5cbd1aeb-e12c-4fd0-ab71-02356ac8564d",
@@ -502,7 +502,7 @@
       "totalKm": 20,
       "driver": "Mateo",
       "automatic": false,
-      "completed": false
+      "completed": true
     },
     {
       "id": "46b628fd-3f16-4fa7-bfc6-a1e085b2a31b",
@@ -529,5 +529,6 @@
       "from": "2026-09-21",
       "to": "2027-06-22"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-07T05:43:43.445Z"
 }
