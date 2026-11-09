@@ -513,7 +513,7 @@
       "totalKm": 88,
       "driver": "Dallas",
       "automatic": false,
-      "completed": false
+      "completed": true
     }
   ],
   "injuries": [
@@ -530,5 +530,5 @@
       "to": "2027-06-22"
     }
   ],
-  "updatedAt": "2026-11-07T05:43:43.445Z"
+  "updatedAt": "2026-11-09T05:56:48.125Z"
 }
