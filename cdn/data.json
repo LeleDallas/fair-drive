@@ -489,7 +489,7 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": null,
+      "driver": "Gobbi",
       "automatic": true,
       "completed": true
     },
@@ -514,6 +514,17 @@
       "driver": "Dallas",
       "automatic": false,
       "completed": true
+    },
+    {
+      "id": "193e4494-d8d6-40fc-b0df-07a2f00b1883",
+      "date": "2026-11-08",
+      "type": "Partita",
+      "name": "Santermete",
+      "km": 44,
+      "totalKm": 88,
+      "driver": "Sinto",
+      "automatic": false,
+      "completed": true
     }
   ],
   "injuries": [
@@ -529,6 +540,5 @@
       "from": "2026-09-21",
       "to": "2027-06-22"
     }
-  ],
-  "updatedAt": "2026-11-09T05:56:48.125Z"
+  ]
 }
