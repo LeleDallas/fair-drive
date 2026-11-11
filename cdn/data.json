@@ -510,7 +510,9 @@
       "name": "[Borello] Torconca",
       "km": 10,
       "totalKm": 20,
-      "drivers": [],
+      "drivers": [
+        "Mateo"
+      ],
       "automatic": false,
       "completed": true
     },
