@@ -16,7 +16,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Lion",
+      "drivers": [
+        "Lion"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -27,7 +29,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Mateo",
+      "drivers": [
+        "Mateo"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -38,7 +42,9 @@
       "name": "Triangolare [Borello]",
       "km": 10,
       "totalKm": 20,
-      "driver": "Simo",
+      "drivers": [
+        "Simo"
+      ],
       "automatic": false,
       "completed": true
     },
@@ -49,7 +55,9 @@
       "name": "Bagnese 🏆",
       "km": 47,
       "totalKm": 94,
-      "driver": "Dallas",
+      "drivers": [
+        "Dallas"
+      ],
       "automatic": false,
       "completed": true
     },
@@ -60,7 +68,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Mateo",
+      "drivers": [
+        "Mateo"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -71,7 +81,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Simo",
+      "drivers": [
+        "Simo"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -82,7 +94,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Dallas",
+      "drivers": [
+        "Dallas"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -93,7 +107,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Giorna",
+      "drivers": [
+        "Giorna"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -104,7 +120,9 @@
       "name": "Gambettola [Borello]",
       "km": 10,
       "totalKm": 20,
-      "driver": "Giorna",
+      "drivers": [
+        "Giorna"
+      ],
       "automatic": false,
       "completed": true
     },
@@ -115,7 +133,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Dallas",
+      "drivers": [
+        "Dallas"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -126,7 +146,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Gobbi",
+      "drivers": [
+        "Gobbi"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -137,7 +159,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Mateo",
+      "drivers": [
+        "Mateo"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -148,7 +172,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Mateo",
+      "drivers": [
+        "Mateo"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -159,7 +185,9 @@
       "name": "Acc. Marignanese",
       "km": 60,
       "totalKm": 120,
-      "driver": "Simo",
+      "drivers": [
+        "Simo"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -170,7 +198,9 @@
       "name": "Presentazione squadra 19:00",
       "km": 20,
       "totalKm": 40,
-      "driver": "Dallas",
+      "drivers": [
+        "Dallas"
+      ],
       "automatic": false,
       "completed": true
     },
@@ -181,7 +211,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Dallas",
+      "drivers": [
+        "Dallas"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -192,7 +224,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Mateo",
+      "drivers": [
+        "Mateo"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -203,7 +237,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Gobbi",
+      "drivers": [
+        "Gobbi"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -214,7 +250,9 @@
       "name": "Capanni [Borello]",
       "km": 10,
       "totalKm": 20,
-      "driver": "Giorna",
+      "drivers": [
+        "Giorna"
+      ],
       "automatic": false,
       "completed": true
     },
@@ -225,7 +263,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Sinto",
+      "drivers": [
+        "Sinto"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -236,7 +276,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Gobbi",
+      "drivers": [
+        "Gobbi"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -247,7 +289,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Dallas",
+      "drivers": [
+        "Dallas"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -258,7 +302,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Mateo",
+      "drivers": [
+        "Mateo"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -269,7 +315,9 @@
       "name": "San Bartolo",
       "km": 50,
       "totalKm": 100,
-      "driver": "Giorna",
+      "drivers": [
+        "Giorna"
+      ],
       "automatic": false,
       "completed": true
     },
@@ -280,7 +328,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Simo",
+      "drivers": [
+        "Simo"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -291,7 +341,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Simo",
+      "drivers": [
+        "Simo"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -302,7 +354,9 @@
       "name": "Santermete [Borello]",
       "km": 10,
       "totalKm": 20,
-      "driver": "Dallas",
+      "drivers": [
+        "Dallas"
+      ],
       "automatic": false,
       "completed": true
     },
@@ -313,7 +367,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Sinto",
+      "drivers": [
+        "Sinto"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -324,7 +380,9 @@
       "name": "Cattolica [Borello]",
       "km": 10,
       "totalKm": 20,
-      "driver": "Mateo",
+      "drivers": [
+        "Mateo"
+      ],
       "automatic": false,
       "completed": true
     },
@@ -335,7 +393,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Simo",
+      "drivers": [
+        "Simo"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -346,7 +406,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Sinto",
+      "drivers": [
+        "Sinto"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -357,7 +419,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Dallas",
+      "drivers": [
+        "Dallas"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -368,7 +432,9 @@
       "name": "Allenamento",
       "km": 16.5,
       "totalKm": 33,
-      "driver": "Sinto",
+      "drivers": [
+        "Sinto"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -379,7 +445,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Simo",
+      "drivers": [
+        "Simo"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -390,7 +458,9 @@
       "name": "Victoria",
       "km": 35,
       "totalKm": 70,
-      "driver": "Mateo",
+      "drivers": [
+        "Mateo"
+      ],
       "automatic": false,
       "completed": true
     },
@@ -401,7 +471,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Dallas",
+      "drivers": [
+        "Dallas"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -412,7 +484,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Simo",
+      "drivers": [
+        "Simo"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -423,7 +497,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Gobbi",
+      "drivers": [
+        "Gobbi"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -434,7 +510,7 @@
       "name": "[Borello] Torconca",
       "km": 10,
       "totalKm": 20,
-      "driver": null,
+      "drivers": [],
       "automatic": false,
       "completed": true
     },
@@ -445,7 +521,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Simo",
+      "drivers": [
+        "Simo"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -456,7 +534,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Dallas",
+      "drivers": [
+        "Dallas"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -467,7 +547,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Sinto",
+      "drivers": [
+        "Sinto"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -478,7 +560,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Giorna",
+      "drivers": [
+        "Giorna"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -489,7 +573,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "driver": "Gobbi",
+      "drivers": [
+        "Gobbi"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -500,7 +586,9 @@
       "name": "[Borello] Bagnese",
       "km": 10,
       "totalKm": 20,
-      "driver": "Mateo",
+      "drivers": [
+        "Mateo"
+      ],
       "automatic": false,
       "completed": true
     },
@@ -511,7 +599,10 @@
       "name": "Santermete",
       "km": 44,
       "totalKm": 88,
-      "driver": "Dallas",
+      "drivers": [
+        "Dallas",
+        "Sinto"
+      ],
       "automatic": false,
       "completed": true
     },
@@ -522,9 +613,49 @@
       "name": "Santermete",
       "km": 44,
       "totalKm": 88,
-      "driver": "Sinto",
+      "drivers": [
+        "Sinto"
+      ],
       "automatic": false,
       "completed": true
+    },
+    {
+      "id": "793f287a-5c34-40f5-a9b4-37306814571a",
+      "date": "2026-11-10",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "drivers": [
+        "Dallas",
+        "Simo"
+      ],
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "d8bf56a0-310e-4fdd-b14e-7e9690ac2908",
+      "date": "2026-11-11",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "drivers": [
+        "Mateo"
+      ],
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "f66c4aaf-a935-4a57-9241-4fc8e67fedd8",
+      "date": "2026-11-13",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "drivers": [],
+      "automatic": true,
+      "completed": false
     }
   ],
   "injuries": [
