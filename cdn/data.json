@@ -609,19 +609,6 @@
       "completed": true
     },
     {
-      "id": "193e4494-d8d6-40fc-b0df-07a2f00b1883",
-      "date": "2026-11-08",
-      "type": "Partita",
-      "name": "Santermete",
-      "km": 44,
-      "totalKm": 88,
-      "drivers": [
-        "Sinto"
-      ],
-      "automatic": false,
-      "completed": true
-    },
-    {
       "id": "793f287a-5c34-40f5-a9b4-37306814571a",
       "date": "2026-11-10",
       "type": "Allenamento",
