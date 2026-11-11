@@ -44,10 +44,10 @@ export const usePlayers = (
 
     setTrips((current) =>
       current.map((trip) =>
-        trip.driver === oldName
+          trip.drivers.includes(oldName)
           ? {
               ...trip,
-              driver: trimmed,
+            drivers: trip.drivers.map((driver) => (driver === oldName ? trimmed : driver)),
             }
           : trip,
       ),

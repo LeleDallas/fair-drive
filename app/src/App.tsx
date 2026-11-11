@@ -49,7 +49,7 @@ const App: React.FC = () => {
   const sortedTrips = useMemo<Trip[]>(() => sortTrips(trips), [trips]);
 
   const assignedTrips = useMemo<Trip[]>(
-    () => trips.filter((trip) => trip.driver !== null),
+    () => trips.filter((trip) => trip.drivers.length > 0),
     [trips],
   );
 
@@ -61,9 +61,11 @@ const App: React.FC = () => {
     });
 
     assignedTrips.forEach((trip) => {
-      if (trip.driver && result[trip.driver] !== undefined) {
-        result[trip.driver] += trip.totalKm;
-      }
+      trip.drivers.forEach((driver) => {
+        if (result[driver] !== undefined) {
+          result[driver] += trip.totalKm;
+        }
+      });
     });
 
     return result;

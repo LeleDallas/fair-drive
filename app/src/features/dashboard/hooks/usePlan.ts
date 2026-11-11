@@ -32,7 +32,7 @@ export const usePlan = (
 
     const km: Record<string, number> = {};
     const turns: Record<string, number> = {};
-    const assignments: Record<string, string> = {};
+    const assignments: Record<string, string[]> = {};
 
     players.forEach((player) => {
       km[player] = 0;
@@ -40,9 +40,11 @@ export const usePlan = (
     });
 
     trips.forEach((trip) => {
-      if (trip.completed && trip.driver) {
-        km[trip.driver] = (km[trip.driver] || 0) + trip.totalKm;
-        turns[trip.driver] = (turns[trip.driver] || 0) + 1;
+      if (trip.completed) {
+        trip.drivers.forEach((driver) => {
+          km[driver] = (km[driver] || 0) + trip.totalKm;
+          turns[driver] = (turns[driver] || 0) + 1;
+        });
       }
     });
 
@@ -74,7 +76,7 @@ export const usePlan = (
 
       const driver: string = candidates[0];
 
-      assignments[trip.id] = driver;
+      assignments[trip.id] = [driver];
 
       km[driver] += trip.totalKm;
       turns[driver] += 1;
@@ -83,7 +85,7 @@ export const usePlan = (
     setTrips((current) =>
       current.map((trip) => ({
         ...trip,
-        driver: trip.completed ? trip.driver : (assignments[trip.id] ?? null),
+        drivers: trip.completed ? trip.drivers : (assignments[trip.id] ?? []),
       })),
     );
 
@@ -100,7 +102,7 @@ export const usePlan = (
     setTrips((current) =>
       current.map((trip) => ({
         ...trip,
-        driver: trip.completed ? trip.driver : null,
+        drivers: trip.completed ? trip.drivers : [],
       })),
     );
   };

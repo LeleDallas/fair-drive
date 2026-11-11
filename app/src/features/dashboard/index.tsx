@@ -36,7 +36,8 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
     setActiveTab,
   );
 
-  const getPlayerTrips = (player: string): Trip[] => trips.filter((trip) => trip.driver === player);
+  const getPlayerTrips = (player: string): Trip[] =>
+    trips.filter((trip) => trip.drivers.includes(player));
 
   return (
     <Plan

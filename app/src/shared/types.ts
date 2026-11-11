@@ -9,7 +9,7 @@ export interface Trip {
   name: string;
   km: number;
   totalKm: number;
-  driver: string | null;
+  drivers: string[];
   automatic: boolean;
   completed: boolean;
 }

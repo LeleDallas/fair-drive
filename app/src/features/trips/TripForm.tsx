@@ -77,25 +77,28 @@ export const TripForm = ({
           />
         </label>
 
-        <label>
-          Chi fa la macchina
-          <select
-            value={tripForm.driverId || ""}
-            onChange={(event) =>
-              setTripForm({
-                ...tripForm,
-                driverId: event.target.value || null,
-              })
-            }
-          >
-            <option value="">Nessuno / Da assegnare</option>
+        <fieldset className="driver-select wide">
+          <legend>Chi guida · una macchina per persona</legend>
+          <div className="driver-options">
             {players.map((player) => (
-              <option key={player} value={player}>
+              <label key={player}>
+                <input
+                  type="checkbox"
+                  checked={tripForm.driverIds.includes(player)}
+                  onChange={(event) =>
+                    setTripForm({
+                      ...tripForm,
+                      driverIds: event.target.checked
+                        ? [...tripForm.driverIds, player]
+                        : tripForm.driverIds.filter((driver) => driver !== player),
+                    })
+                  }
+                />
                 {player}
-              </option>
+              </label>
             ))}
-          </select>
-        </label>
+          </div>
+        </fieldset>
 
         <label>
           Km di andata

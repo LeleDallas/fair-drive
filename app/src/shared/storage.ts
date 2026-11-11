@@ -37,7 +37,11 @@ const normalizeTrip = (value: unknown): Trip | null => {
     return null;
   }
 
-  const driver = typeof trip.driver === "string" ? trip.driver : null;
+  const drivers = Array.isArray(trip.drivers)
+    ? trip.drivers.filter((driver): driver is string => typeof driver === "string")
+    : typeof trip.driver === "string"
+      ? [trip.driver]
+      : [];
 
   const automatic =
     typeof trip.automatic === "boolean" ? trip.automatic : trip.type === "Allenamento";
@@ -50,7 +54,7 @@ const normalizeTrip = (value: unknown): Trip | null => {
     name: trip.name,
     km: trip.km,
     totalKm: trip.totalKm,
-    driver,
+    drivers,
     automatic,
     completed,
   };

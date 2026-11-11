@@ -5,7 +5,7 @@ export interface TripForm {
   type: TripType;
   name: string;
   km: string;
-  driverId: string | null;
+  driverIds: string[];
 }
 
 export interface GeneratorForm {
@@ -21,7 +21,7 @@ export const emptyTripForm: TripForm = {
   type: "Allenamento",
   name: "",
   km: "",
-  driverId: null,
+  driverIds: [],
 };
 
 export const emptyGeneratorForm: GeneratorForm = {

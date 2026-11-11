@@ -29,7 +29,7 @@ export const Plan: React.FC<PlanProps> = ({
   editTrip,
   deleteTrip,
 }: PlanProps) => {
-  const hasPlan: boolean = trips.some((trip) => trip.driver !== null);
+  const hasPlan: boolean = trips.some((trip) => trip.drivers.length > 0);
   const sortedTrips: Trip[] = sortTrips(trips);
   const completedTrips: Trip[] = sortedTrips.filter((trip) => trip.completed);
   const pendingTrips: Trip[] = sortedTrips.filter((trip) => !trip.completed);
@@ -153,7 +153,7 @@ export const Plan: React.FC<PlanProps> = ({
                 <div className="driver">
                   <span>🚗</span>
 
-                  <strong>{trip.driver || "Non assegnato"}</strong>
+                  <strong>{trip.drivers.join(", ") || "Non assegnato"}</strong>
                 </div>
 
                 <div className="row-actions">
@@ -206,7 +206,7 @@ export const Plan: React.FC<PlanProps> = ({
                             </div>
                             <div className="driver">
                               <span>🚗</span>
-                              <strong>{trip.driver || "Non assegnato"}</strong>
+                              <strong>{trip.drivers.join(", ") || "Non assegnato"}</strong>
                             </div>
                             <div className="row-actions">
                               <button

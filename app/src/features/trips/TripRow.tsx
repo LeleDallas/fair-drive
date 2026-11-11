@@ -33,10 +33,10 @@ export const TripRow: React.FC<TripRowProps> = ({
       </div>
 
       <div className="trip-driver">
-        {trip.driver ? (
+        {trip.drivers.length > 0 ? (
           <>
             <span>🚗</span>
-            {trip.driver}
+            {trip.drivers.join(", ")}
           </>
         ) : (
           <span className="not-assigned">Da assegnare</span>

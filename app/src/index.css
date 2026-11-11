@@ -286,6 +286,39 @@ button {
   grid-column: span 2;
 }
 
+.driver-select {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.driver-select legend {
+  margin-bottom: 8px;
+  color: #4d5a51;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.driver-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
+
+.driver-options label {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+  font-weight: 600;
+}
+
+.driver-options input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
 input,
 select {
   width: 100%;
