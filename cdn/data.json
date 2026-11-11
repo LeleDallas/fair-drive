@@ -630,7 +630,8 @@
       "km": 20,
       "totalKm": 40,
       "drivers": [
-        "Mateo"
+        "Mateo",
+        "Sinto"
       ],
       "automatic": true,
       "completed": false
