@@ -620,7 +620,7 @@
         "Simo"
       ],
       "automatic": true,
-      "completed": false
+      "completed": true
     },
     {
       "id": "d8bf56a0-310e-4fdd-b14e-7e9690ac2908",
@@ -634,7 +634,7 @@
         "Sinto"
       ],
       "automatic": true,
-      "completed": false
+      "completed": true
     },
     {
       "id": "f66c4aaf-a935-4a57-9241-4fc8e67fedd8",
@@ -661,5 +661,6 @@
       "from": "2026-09-21",
       "to": "2027-06-22"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-12T06:57:00.405Z"
 }
