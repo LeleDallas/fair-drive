@@ -643,7 +643,10 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "drivers": [],
+      "drivers": [
+        "Dallas",
+        "Giorna"
+      ],
       "automatic": true,
       "completed": false
     }
@@ -661,6 +664,5 @@
       "from": "2026-09-21",
       "to": "2027-06-22"
     }
-  ],
-  "updatedAt": "2026-11-12T06:57:00.405Z"
+  ]
 }
