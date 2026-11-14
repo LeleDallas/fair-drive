@@ -644,11 +644,21 @@
       "km": 20,
       "totalKm": 40,
       "drivers": [
-        "Dallas",
         "Giorna"
       ],
       "automatic": true,
       "completed": true
+    },
+    {
+      "id": "a5a0ff32-7dab-4fbf-810a-60dfe3bdb374",
+      "date": "2026-11-15",
+      "type": "Allenamento",
+      "name": "[SanPiero] Jr Gambettola",
+      "km": 45,
+      "totalKm": 90,
+      "drivers": [],
+      "automatic": true,
+      "completed": false
     }
   ],
   "injuries": [
@@ -664,6 +674,5 @@
       "from": "2026-11-13",
       "to": "2027-06-30"
     }
-  ],
-  "updatedAt": "2026-11-14T06:01:32.525Z"
+  ]
 }
