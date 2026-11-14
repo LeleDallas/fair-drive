@@ -648,7 +648,7 @@
         "Giorna"
       ],
       "automatic": true,
-      "completed": false
+      "completed": true
     }
   ],
   "injuries": [
@@ -664,5 +664,6 @@
       "from": "2026-11-13",
       "to": "2027-06-30"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-14T06:01:32.525Z"
 }
