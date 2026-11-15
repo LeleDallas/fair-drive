@@ -656,7 +656,10 @@
       "name": "[SanPiero] Jr Gambettola",
       "km": 45,
       "totalKm": 90,
-      "drivers": [],
+      "drivers": [
+        "Simo",
+        "Sinto"
+      ],
       "automatic": true,
       "completed": false
     }
