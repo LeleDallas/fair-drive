@@ -661,7 +661,7 @@
         "Sinto"
       ],
       "automatic": true,
-      "completed": false
+      "completed": true
     }
   ],
   "injuries": [
@@ -677,5 +677,6 @@
       "from": "2026-11-13",
       "to": "2027-06-30"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-16T06:05:38.064Z"
 }
