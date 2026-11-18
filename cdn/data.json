@@ -675,7 +675,7 @@
         "Giorna"
       ],
       "automatic": true,
-      "completed": false
+      "completed": true
     },
     {
       "id": "89a527c9-894a-4726-901a-0ea9ef7130c7",
@@ -713,5 +713,6 @@
       "from": "2026-11-13",
       "to": "2027-06-30"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-18T07:04:17.741Z"
 }
