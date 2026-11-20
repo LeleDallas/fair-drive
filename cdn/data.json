@@ -698,7 +698,10 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "drivers": [],
+      "drivers": [
+        "Sinto",
+        "Giorna"
+      ],
       "automatic": true,
       "completed": false
     }
