@@ -684,7 +684,10 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "drivers": [],
+      "drivers": [
+        "Mateo",
+        "Gobbi"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -713,6 +716,5 @@
       "from": "2026-11-13",
       "to": "2027-06-30"
     }
-  ],
-  "updatedAt": "2026-11-19T07:05:31.119Z"
+  ]
 }
