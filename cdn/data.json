@@ -704,6 +704,42 @@
       ],
       "automatic": true,
       "completed": true
+    },
+    {
+      "id": "4c5fc213-acd7-487c-ad02-035b2c348b61",
+      "date": "2026-11-24",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "drivers": [
+        "Dallas",
+        "Mateo"
+      ],
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "f2ac1836-7aa8-438b-a71e-1cc00a0baf08",
+      "date": "2026-11-25",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "drivers": [],
+      "automatic": true,
+      "completed": false
+    },
+    {
+      "id": "7a7f3d26-c06d-4e45-b0cb-03476e94a58a",
+      "date": "2026-11-27",
+      "type": "Allenamento",
+      "name": "Allenamento",
+      "km": 20,
+      "totalKm": 40,
+      "drivers": [],
+      "automatic": true,
+      "completed": false
     }
   ],
   "injuries": [
@@ -719,6 +755,5 @@
       "from": "2026-11-13",
       "to": "2027-06-30"
     }
-  ],
-  "updatedAt": "2026-11-21T06:51:40.718Z"
+  ]
 }
