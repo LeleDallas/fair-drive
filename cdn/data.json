@@ -717,7 +717,7 @@
         "Mateo"
       ],
       "automatic": true,
-      "completed": false
+      "completed": true
     },
     {
       "id": "f2ac1836-7aa8-438b-a71e-1cc00a0baf08",
@@ -755,5 +755,6 @@
       "from": "2026-11-13",
       "to": "2027-06-30"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-25T08:10:55.170Z"
 }
