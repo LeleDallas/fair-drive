@@ -726,7 +726,9 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "drivers": [],
+      "drivers": [
+        "Giorna"
+      ],
       "automatic": true,
       "completed": true
     },
@@ -755,6 +757,5 @@
       "from": "2026-11-13",
       "to": "2027-06-30"
     }
-  ],
-  "updatedAt": "2026-11-26T07:58:42.155Z"
+  ]
 }
