@@ -739,7 +739,10 @@
       "name": "Allenamento",
       "km": 20,
       "totalKm": 40,
-      "drivers": [],
+      "drivers": [
+        "Gobbi",
+        "Sinto"
+      ],
       "automatic": true,
       "completed": true
     }
@@ -757,6 +760,5 @@
       "from": "2026-11-13",
       "to": "2027-06-30"
     }
-  ],
-  "updatedAt": "2026-11-28T07:29:41.634Z"
+  ]
 }
