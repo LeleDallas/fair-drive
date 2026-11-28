@@ -745,6 +745,17 @@
       ],
       "automatic": true,
       "completed": true
+    },
+    {
+      "id": "fc7f9b0e-6375-49aa-bc67-1cc5db976b11",
+      "date": "2026-11-29",
+      "type": "Partita",
+      "name": "Superga",
+      "km": 20,
+      "totalKm": 40,
+      "drivers": [],
+      "automatic": false,
+      "completed": false
     }
   ],
   "injuries": [
